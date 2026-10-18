@@ -48,7 +48,7 @@ T=\frac{2\pi}{\pi/2}=4\text{ horas}
 ![Gráfico](./assets/img/graficoFuncao.png)
 
 ## Site no GitHub Pages
-![Site](https://luiiiq.github.io/fun-esTrigonometricas/)
+[**Clique aqui para acessar o site CP II**](https://luiiiq.github.io/fun-esTrigonometricas/)
 
 ## Observação
 A função é um modelo hipotético para fins educacionais. O desempenho real de uma pessoa não varia necessariamente de forma periódica.
