@@ -1,0 +1,255 @@
+/* ! Configurações Gerais */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background: #090911;
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+}
+
+main {
+    padding: 25px 55px;
+}
+
+/* ! Header */
+header {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+    padding: 1.5rem 1rem;
+    background: #030303;
+}
+
+nav {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+@media (max-width:547px) {
+    header {
+        position: initial;
+    }
+
+    nav {
+        position: initial;
+        left: 0;
+        transform: translateX(0%);
+    }
+    header button {
+        margin-top: 1.5rem;
+    }
+}
+
+.listaNav {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-transform: uppercase;
+    gap: 25px;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.listaNav li a {
+    cursor: pointer;
+    color: #ddd3d3;
+    position: relative;
+}
+
+.listaNav li a::after {
+    width: 0%;
+    height: 2px;
+    background-color: #ddd3d3;
+    position: absolute;
+    content: "";
+    display: block;
+    transition: all 0.4s ease;
+}
+
+.listaNav li a:hover::after {
+    width: 100%;
+}
+
+header button {
+    margin-left: auto;
+    background: #9059e9;
+    border: none;
+    padding: 8px 30px;
+    color: #ddd3d3;
+    border-radius: 6px;
+    font-size: 1.30rem;
+    transition: all 0.4s ease;
+}
+
+header button:hover {
+    transform: scale(1.1);
+}
+
+/* ! Conteúdo principal */
+h2 {
+    color: #f0e7e7;
+    font-weight: normal;
+    font-size: 25px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+h2::after {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #9059e9;
+    content: "";
+    display: inline-block;
+    box-shadow: 0 0 10px #9059e9;
+    flex-shrink: 0;
+}
+
+h2::before {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #9059e9;
+    content: "";
+    display: inline-block;
+    box-shadow: 0 0 10px #9059e9;
+    flex-shrink: 0;
+}
+
+p {
+    color: #999797;
+    font-size: 19px;
+    max-width: 80vw;
+    line-height: 1.3;
+    padding-left: 10px;
+}
+
+@media(max-width:480px) {
+    p {
+        font-size: 16px;
+    }
+    h2 {
+        font-size: 20px;
+    }
+    h3 {
+        font-size: 19px;
+    }
+    h4 {
+        font-size: 18px;
+    }
+    .funcao {
+        font-size: 25px !important;
+    }
+}
+
+@media(max-width:1020px) {
+    #grafico iframe {
+        width: 700px;
+        max-width: 100%;
+        height: 580px;
+    }
+}
+
+.funcao {
+    background: #090911;
+    border: 2px solid #ddd3d3;
+    padding: 10px 20px;
+    border-radius: 8px;
+    color: #f1efef;
+    font-size: 30px;
+    margin: 1.1rem 0;
+    display: block;
+    justify-self: center;
+}
+
+.listaProblema {
+    color: #e2d4d4;
+    font-size: 18px;
+    padding: 10px 0 10px 40px;
+}
+
+section {
+    box-shadow: 0 0 4px 1px rgba(0,0,0,0.7);
+    padding: 15px 30px;
+    border-radius: 6px;
+    margin-bottom: 1.2rem;
+}
+
+h3 {
+    font-weight: 500;
+    font-size: 23px;
+    color: #d2bff0;
+}
+
+.formula {
+    background: #7c4bca;
+    border: 2px solid #ddd3d3;
+    padding: 8px 30px;
+    color: #ddd3d3;
+    border-radius: 6px;
+    font-size: 1.30rem;
+    font-weight: 500;
+    display: block;
+    justify-self: left;
+    margin: 3px 0 20px 15px;
+}
+
+.listaConclusao {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.listaConclusao li {
+    background: #191820;
+    border: 1px solid #f0e7e7;
+    border-radius: 5px;
+    padding: 20px;
+    flex: 1;
+}
+
+h4 {
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    color: #e2d4d4;
+}
+
+.listaConclusao li strong {
+    text-align: center;
+    display: block;
+    font-size: 40px;
+    color: #38f309;
+    padding: 10px;
+}
+
+footer {
+    background: #0a0a0a;
+    padding: 30px;
+}
+
+footer p {
+    color: #fff;
+    text-align: center;
+    margin: 0 auto;
+}
